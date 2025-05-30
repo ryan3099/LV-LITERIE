@@ -1,67 +1,128 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LV LITERIE</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #003366;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
       color: white;
-      padding: 30px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      text-transform: uppercase;
     }
-    h1, h2 {
-      color: #003366;
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    .section-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      padding: 20px;
+      flex: 1 1 calc(50% - 40px);
+      min-width: 280px;
+      text-align: center;
+    }
+    .section-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .section-box h3 {
+      color: #6a11cb;
+      margin: 10px 0;
     }
     .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+      background: #f1f5ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact a {
+      color: #2575fc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
     }
     footer {
-      background-color: #003366;
-      color: white;
+      background: #222;
+      color: #ccc;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>LV LITERIE</h1>
+    <p>Confort, Qualité, Expertise</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <div class="section-container">
+    <div class="section-box">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2670&auto=format&fit=crop" alt="Matelas">
+      <h3>Produits Haut de Gamme</h3>
+      <p>Des solutions de literie durables et ergonomiques pour un sommeil parfait.</p>
     </div>
-  </section>
+    <div class="section-box">
+      <img src="https://images.unsplash.com/photo-1604866830893-c13cafa515d5?q=80&w=2574&auto=format&fit=crop" alt="Chambre moderne">
+      <h3>Design Moderne</h3>
+      <p>Intégration parfaite dans tous les intérieurs avec un style élégant.</p>
+    </div>
+    <div class="section-box">
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=2574&auto=format&fit=crop" alt="Démonstration">
+      <h3>Conseils Personnalisés</h3>
+      <p>Notre équipe vous accompagne dans le choix du produit adapté à vos besoins.</p>
+    </div>
+    <div class="section-box">
+      <img src="https://images.unsplash.com/photo-1522407183863-c0bf2256188c?q=80&w=2670&auto=format&fit=crop" alt="Service client">
+      <h3>Service Client Réactif</h3>
+      <p>Support disponible et à l’écoute, pour un suivi sans stress.</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:vollin@lvliterie.shop">vollin@lvliterie.shop</a></p>
+    <p>Téléphone : <a href="tel:+33284179287">+33 2 84 17 92 87</a></p>
+    <p>Localisation : Quartier Vitton, Lyon</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Vitton,+Lyon,+France&output=embed"
+      loading="lazy"
+      allowfullscreen
+    ></iframe>
+  </div>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    &copy; 2025 LV LITERIE — Tous droits réservés.
   </footer>
+
 </body>
 </html>
